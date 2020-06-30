@@ -1,2 +1,4 @@
 .env
 /node_modules
+/matrix-code.json
+/credentials
