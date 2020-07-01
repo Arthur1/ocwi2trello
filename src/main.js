@@ -2,6 +2,7 @@
 
 import dotenv from 'dotenv'
 import Credential from './credential.js'
+import Portal from './portal.js'
 
 dotenv.config()
 main()
@@ -11,11 +12,11 @@ async function main() {
         console.log('Please execute $ npm run generate_key')
         return
     }
-    const createCredential = async () => {
-        const credential = new Credential()
-        await credential.init()
-        return credential
-    }
-    let c = await createCredential()
-    console.log(c)
+
+    const credential = new Credential()
+    await credential.init()
+
+    const portal = new Portal(credential)
+    await portal.init()
+    await portal.login()
 }

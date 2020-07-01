@@ -89,4 +89,12 @@ export default class Credential {
         decryptedData = Buffer.concat([decryptedData, decipher.final()])
         return decryptedData
     }
+
+    getMatrixValueByKey(key) {
+        const xStr = key.slice(1, 2)
+        const yStr = key.slice(3, 4)
+        const x = xStr.charCodeAt() - 65
+        const y = Number(yStr) - 1
+        return this.matrixCode[x * 7 + y]
+    }
 }
