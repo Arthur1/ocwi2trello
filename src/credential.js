@@ -1,6 +1,5 @@
 'use strict'
 
-import rl from 'readline-sync'
 import fs from 'fs/promises'
 import crypto from 'crypto'
 

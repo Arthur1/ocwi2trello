@@ -51,6 +51,24 @@ Matrix Code File Name? (matrix-code.json):
 $ npm run delete_credentials
 ```
 
+### trelloのAPIキー設定
+
+`.env` に追記
+
+```
+TRELLO_KEY="trellos_secret_key"
+TRELLO_TOKEN="trellos_secret_token"
+TRELLO_USER_ID="my_user_id"
+```
+
+### 使用するボード・リストの選択
+
+上の環境変数を正しくセットしてから実行してください。
+
+```
+$ npm run set_trello_board
+```
+
 ## 実行
 
 ```
