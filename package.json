@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "main": "node src/main.js",
     "generate_key": "node src/generate_key.js",
     "set_trello_list": "node src/set_trello_list.js",
@@ -17,7 +16,6 @@
     "cli-select": "^1.1.2",
     "dotenv": "^8.2.0",
     "puppeteer": "^4.0.1",
-    "readline": "^1.3.0",
     "readline-sync": "^1.4.10",
     "trello": "^0.10.0"
   }
